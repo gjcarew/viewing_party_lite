@@ -16,7 +16,7 @@ RSpec.describe 'Discover movies page' do
     end
 
     describe 'happy path' do
-      xit 'When I search for a movie I am taken to the Movie Results Page', :vcr do
+      it 'When I search for a movie I am taken to the Movie Results Page', :vcr do
         user = create(:user)
         visit "/users/#{user.id}/discover"
         fill_in('Search by Movie Title', with: 'fight')
@@ -25,7 +25,7 @@ RSpec.describe 'Discover movies page' do
         expect(current_path).to eq("/users/#{user.id}/movies")
         expect(page).to have_content('Average Votes:')
         expect(page).to have_link('Fight Club')
-        expect(page).to have_button('Return to Discover Page')
+        expect(page).to have_button('Discover')
       end
 
       it 'When I click top rated movies I see the current top 20 movies', :vcr do
@@ -38,7 +38,7 @@ RSpec.describe 'Discover movies page' do
       end
     end
 
-    xdescribe 'sad path' do
+    describe 'sad path' do
       it 'When I fill in nothing and click Search by Movie Title I recieve an error message', :vcr do
         user = create(:user)
         visit "/users/#{user.id}/discover"
