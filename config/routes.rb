@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   root to: 'users#welcome'
+  get '/login', to: 'users#login_form'
+  post '/login', to: 'users#login'
   get '/register', to: 'users#new'
 
   resources :user_parties

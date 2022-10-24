@@ -4,11 +4,25 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def login_form
+  end
+
+  def login
+    if User.exists?(email: params[:email])
+      user = User.find_by(email: params[:email])
+      authenticate_pw(user)
+    else
+      flash[:error] = "Email not found."
+      render :login_form
+    end 
+  end
+
   def new
   end
 
   def create
     @user = User.new(user_params)
+    @user[:email] = @user[:email].downcase
     if @user.save
       session[:user_id] = @user.id
       redirect_to user_path(@user)
@@ -45,5 +59,15 @@ class UsersController < ApplicationController
   private 
   def user_params
     params.permit(:email, :name, :password, :password_confirmation)
+  end
+
+  def authenticate_pw(user)
+    if user.authenticate(params[:password])
+      flash[:success] = "Welcome, #{user.name}!"
+      redirect_to user_path(user)
+    else
+      flash[:error] = "Incorrect password."
+      render :login_form
+    end
   end
 end
