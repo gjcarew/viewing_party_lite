@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/550?api_key=
     body:
       encoding: US-ASCII
       string: ''
@@ -15,68 +15,40 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 401
+      message: Unauthorized
     headers:
       Content-Type:
-      - application/json;charset=utf-8
+      - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
       Date:
-      - Thu, 13 Oct 2022 16:16:25 GMT
+      - Mon, 24 Oct 2022 01:54:06 GMT
       Server:
       - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
       Cache-Control:
-      - public, max-age=28800
-      X-Memc:
-      - HIT
-      X-Memc-Key:
-      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
-      X-Memc-Age:
-      - '16732'
-      X-Memc-Expires:
-      - '644'
-      Etag:
-      - W/"c31a446eb95502d3c0501a0b104f3d3b"
-      Vary:
-      - Accept-Encoding
+      - public, max-age=300
       X-Cache:
-      - Hit from cloudfront
+      - Error from cloudfront
       Via:
-      - 1.1 b8c4a4ca04bb1976e020396d211bc8dc.cloudfront.net (CloudFront)
+      - 1.1 cd858042f70b416ca05e042acf3908a4.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - SEA73-P1
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - vzM9KZbLRRQgebhmHTG1gEDKvmV65hi2VCBOcvlTHvsU3UzkMyr4rg==
-      Age:
-      - '18117'
+      - cxlzypmQ1leviqbgUV2YkhLKEs-MxQFS7Lvs8HGx_Hda4X5Q6_GH0Q==
+      Vary:
+      - Origin
     body:
-      encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
-        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
-        channel primal male aggression into a shocking new form of therapy. Their
-        concept catches on, with underground \"fight clubs\" forming in every town,
-        until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":98.443,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
-        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
-        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
-        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
-        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
-        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
-        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.433,"vote_count":24945}'
-  recorded_at: Thu, 13 Oct 2022 21:18:22 GMT
+      encoding: UTF-8
+      string: '{"status_code":7,"status_message":"Invalid API key: You must be granted
+        a valid key.","success":false}
+
+'
+  recorded_at: Mon, 24 Oct 2022 01:54:06 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
@@ -102,16 +74,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 13 Oct 2022 16:16:25 GMT
+      - Mon, 24 Oct 2022 01:25:44 GMT
       Server:
       - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
       Cache-Control:
       - public, max-age=28800
       X-Memc:
@@ -119,25 +84,26 @@ http_interactions:
       X-Memc-Key:
       - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
       X-Memc-Age:
-      - '16732'
+      - '8923'
       X-Memc-Expires:
-      - '644'
+      - '6310'
       Etag:
-      - W/"c31a446eb95502d3c0501a0b104f3d3b"
+      - W/"d6efca17eab3652f1ff5f7b7eb353d32"
       Vary:
-      - Accept-Encoding
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 567b44ed19c8caed2570b7bcd8c70034.cloudfront.net (CloudFront)
+      - 1.1 618052a0d9c86c1a3bf663f82d041d1c.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - FwrYdMgZumfKgQF6sON1d3YpOC1M5gfDc1fzhe7degYYH_bn7ZlDBA==
+      - hex_vntG6PTbSXG3DnHRcEiL6a9tfO2KLjfHypYkN001_Y5WiBzAwQ==
       Age:
-      - '18117'
+      - '2438'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
@@ -145,15 +111,15 @@ http_interactions:
         channel primal male aggression into a shocking new form of therapy. Their
         concept catches on, with underground \"fight clubs\" forming in every town,
         until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":98.443,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        oblivion.","popularity":103.361,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
         Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
         2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
         Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
         Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
         Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.433,"vote_count":24945}'
-  recorded_at: Thu, 13 Oct 2022 21:18:22 GMT
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.427,"vote_count":25035}'
+  recorded_at: Mon, 24 Oct 2022 02:06:22 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
@@ -179,16 +145,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 13 Oct 2022 16:16:25 GMT
+      - Mon, 24 Oct 2022 01:25:44 GMT
       Server:
       - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
       Cache-Control:
       - public, max-age=28800
       X-Memc:
@@ -196,25 +155,26 @@ http_interactions:
       X-Memc-Key:
       - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
       X-Memc-Age:
-      - '16732'
+      - '8923'
       X-Memc-Expires:
-      - '644'
+      - '6310'
       Etag:
-      - W/"c31a446eb95502d3c0501a0b104f3d3b"
+      - W/"d6efca17eab3652f1ff5f7b7eb353d32"
       Vary:
-      - Accept-Encoding
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 001e7070d795018d01b93988b9723742.cloudfront.net (CloudFront)
+      - 1.1 31dfa94142c6eaf975b0e5454c00340a.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - LqJ_3qa3QmWnFcyOK_67IezSemDJSu4388zrqg4YxgSQmQcq7d0tTA==
+      - cXY76JSejjI0dKKztFVbol_BFoqwlMbydwZUBZLc5xTUoZSEo3oqZA==
       Age:
-      - '18118'
+      - '2438'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
@@ -222,15 +182,15 @@ http_interactions:
         channel primal male aggression into a shocking new form of therapy. Their
         concept catches on, with underground \"fight clubs\" forming in every town,
         until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":98.443,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        oblivion.","popularity":103.361,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
         Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
         2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
         Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
         Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
         Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.433,"vote_count":24945}'
-  recorded_at: Thu, 13 Oct 2022 21:18:23 GMT
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.427,"vote_count":25035}'
+  recorded_at: Mon, 24 Oct 2022 02:06:22 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
@@ -256,16 +216,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 13 Oct 2022 16:16:25 GMT
+      - Mon, 24 Oct 2022 01:25:44 GMT
       Server:
       - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
       Cache-Control:
       - public, max-age=28800
       X-Memc:
@@ -273,13 +226,369 @@ http_interactions:
       X-Memc-Key:
       - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
       X-Memc-Age:
-      - '16732'
+      - '8923'
       X-Memc-Expires:
-      - '644'
+      - '6310'
       Etag:
-      - W/"c31a446eb95502d3c0501a0b104f3d3b"
+      - W/"d6efca17eab3652f1ff5f7b7eb353d32"
       Vary:
-      - Accept-Encoding
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 2c6b5dd77f1abe60653ce0454f344b64.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C3
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - A9ZfffbqsN8Q-fZsSFvZ4QCL5EzJDZPd8gaP1HVssiMbSl6m3H7SnQ==
+      Age:
+      - '2438'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
+        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
+        channel primal male aggression into a shocking new form of therapy. Their
+        concept catches on, with underground \"fight clubs\" forming in every town,
+        until an eccentric gets in the way and ignites an out-of-control spiral toward
+        oblivion.","popularity":103.361,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
+        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
+        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
+        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
+        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.427,"vote_count":25035}'
+  recorded_at: Mon, 24 Oct 2022 02:06:22 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 24 Oct 2022 01:25:44 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
+      X-Memc-Age:
+      - '8923'
+      X-Memc-Expires:
+      - '6310'
+      Etag:
+      - W/"d6efca17eab3652f1ff5f7b7eb353d32"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 28390a4d24ed4fdccd685d99cd06cf4e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA73-P1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - Vm1U95sUJc4HDb2VH9JDSpdjzUI-EaTjIsmtcPiHcJJ4o3eX3nX82Q==
+      Age:
+      - '2593'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
+        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
+        channel primal male aggression into a shocking new form of therapy. Their
+        concept catches on, with underground \"fight clubs\" forming in every town,
+        until an eccentric gets in the way and ignites an out-of-control spiral toward
+        oblivion.","popularity":103.361,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
+        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
+        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
+        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
+        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.427,"vote_count":25035}'
+  recorded_at: Mon, 24 Oct 2022 02:08:57 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 24 Oct 2022 01:25:44 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
+      X-Memc-Age:
+      - '8923'
+      X-Memc-Expires:
+      - '6310'
+      Etag:
+      - W/"d6efca17eab3652f1ff5f7b7eb353d32"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 5954c6394458ffb44c970b3819d7ff2a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA73-P1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - Bbcm9zmZXxGuQKrLcbTELuJ7q2924e8SODqqcFhU0k1UZO6DW6N-jg==
+      Age:
+      - '2593'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
+        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
+        channel primal male aggression into a shocking new form of therapy. Their
+        concept catches on, with underground \"fight clubs\" forming in every town,
+        until an eccentric gets in the way and ignites an out-of-control spiral toward
+        oblivion.","popularity":103.361,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
+        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
+        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
+        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
+        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.427,"vote_count":25035}'
+  recorded_at: Mon, 24 Oct 2022 02:08:57 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 24 Oct 2022 01:25:44 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
+      X-Memc-Age:
+      - '8923'
+      X-Memc-Expires:
+      - '6310'
+      Etag:
+      - W/"d6efca17eab3652f1ff5f7b7eb353d32"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 6396e88c437c096ef98930ce29f731a2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA73-P1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - jerMBIZzSJYZAfhOoiBLshqfXNH4HVj-2iEZEXtQak1CjJuDeItwRg==
+      Age:
+      - '2593'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
+        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
+        channel primal male aggression into a shocking new form of therapy. Their
+        concept catches on, with underground \"fight clubs\" forming in every town,
+        until an eccentric gets in the way and ignites an out-of-control spiral toward
+        oblivion.","popularity":103.361,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
+        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
+        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
+        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
+        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.427,"vote_count":25035}'
+  recorded_at: Mon, 24 Oct 2022 02:08:57 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 24 Oct 2022 01:25:44 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
+      X-Memc-Age:
+      - '8923'
+      X-Memc-Expires:
+      - '6310'
+      Etag:
+      - W/"d6efca17eab3652f1ff5f7b7eb353d32"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 09331f0822fc98eebaf04130a83dbd44.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA73-P1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - JM3GC-mdE2ZekjcJ0e6yH77tPO9eFREKGkYC087N6eiUuvf04yfH8Q==
+      Age:
+      - '2594'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
+        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
+        channel primal male aggression into a shocking new form of therapy. Their
+        concept catches on, with underground \"fight clubs\" forming in every town,
+        until an eccentric gets in the way and ignites an out-of-control spiral toward
+        oblivion.","popularity":103.361,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
+        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
+        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
+        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
+        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.427,"vote_count":25035}'
+  recorded_at: Mon, 24 Oct 2022 02:08:58 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 24 Oct 2022 01:25:44 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
+      X-Memc-Age:
+      - '8923'
+      X-Memc-Expires:
+      - '6310'
+      Etag:
+      - W/"d6efca17eab3652f1ff5f7b7eb353d32"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
@@ -289,9 +598,9 @@ http_interactions:
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - ghA317x3G52l7Ze21qQcjqKCJwnX9nDixsknUSBntX6NSvpcd3VSUg==
+      - 2c23-FrJXRbTGKLpHIHF0heDbPEo9LRv2IW2gHWNrZO1ZjvWdxoDXg==
       Age:
-      - '18119'
+      - '2594'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
@@ -299,321 +608,13 @@ http_interactions:
         channel primal male aggression into a shocking new form of therapy. Their
         concept catches on, with underground \"fight clubs\" forming in every town,
         until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":98.443,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        oblivion.","popularity":103.361,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
         Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
         2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
         Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
         Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
         Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.433,"vote_count":24945}'
-  recorded_at: Thu, 13 Oct 2022 21:18:23 GMT
-- request:
-    method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json;charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Date:
-      - Thu, 13 Oct 2022 16:16:25 GMT
-      Server:
-      - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
-      Cache-Control:
-      - public, max-age=28800
-      X-Memc:
-      - HIT
-      X-Memc-Key:
-      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
-      X-Memc-Age:
-      - '16732'
-      X-Memc-Expires:
-      - '644'
-      Etag:
-      - W/"c31a446eb95502d3c0501a0b104f3d3b"
-      Vary:
-      - Accept-Encoding
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 b8c4a4ca04bb1976e020396d211bc8dc.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - SEA73-P1
-      Alt-Svc:
-      - h3=":443"; ma=86400
-      X-Amz-Cf-Id:
-      - ERTRKER6YjkGS9jvx2gC73pK4SY87hG3JUTXd1GLW57gy6E_hg_VxA==
-      Age:
-      - '18119'
-    body:
-      encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
-        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
-        channel primal male aggression into a shocking new form of therapy. Their
-        concept catches on, with underground \"fight clubs\" forming in every town,
-        until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":98.443,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
-        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
-        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
-        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
-        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
-        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
-        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.433,"vote_count":24945}'
-  recorded_at: Thu, 13 Oct 2022 21:18:24 GMT
-- request:
-    method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json;charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Date:
-      - Thu, 13 Oct 2022 16:16:25 GMT
-      Server:
-      - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
-      Cache-Control:
-      - public, max-age=28800
-      X-Memc:
-      - HIT
-      X-Memc-Key:
-      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
-      X-Memc-Age:
-      - '16732'
-      X-Memc-Expires:
-      - '644'
-      Etag:
-      - W/"c31a446eb95502d3c0501a0b104f3d3b"
-      Vary:
-      - Accept-Encoding
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 cd858042f70b416ca05e042acf3908a4.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - SEA73-P1
-      Alt-Svc:
-      - h3=":443"; ma=86400
-      X-Amz-Cf-Id:
-      - YRrReM-YaoUf6ucS4eeZ1eUKfPD4k8d-B5lZ_DBmgSjP96Q8WpVYgg==
-      Age:
-      - '18120'
-    body:
-      encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
-        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
-        channel primal male aggression into a shocking new form of therapy. Their
-        concept catches on, with underground \"fight clubs\" forming in every town,
-        until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":98.443,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
-        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
-        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
-        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
-        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
-        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
-        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.433,"vote_count":24945}'
-  recorded_at: Thu, 13 Oct 2022 21:18:24 GMT
-- request:
-    method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json;charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Date:
-      - Thu, 13 Oct 2022 16:16:25 GMT
-      Server:
-      - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
-      Cache-Control:
-      - public, max-age=28800
-      X-Memc:
-      - HIT
-      X-Memc-Key:
-      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
-      X-Memc-Age:
-      - '16732'
-      X-Memc-Expires:
-      - '644'
-      Etag:
-      - W/"c31a446eb95502d3c0501a0b104f3d3b"
-      Vary:
-      - Accept-Encoding
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 1481cc55c02c3a782ad420b6bac2cb32.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - SEA73-P1
-      Alt-Svc:
-      - h3=":443"; ma=86400
-      X-Amz-Cf-Id:
-      - Azw47zIQCb10-M3n33TIrV0q9VZnBbgm4bLPanN4YCxVq16riM2kww==
-      Age:
-      - '18120'
-    body:
-      encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
-        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
-        channel primal male aggression into a shocking new form of therapy. Their
-        concept catches on, with underground \"fight clubs\" forming in every town,
-        until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":98.443,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
-        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
-        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
-        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
-        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
-        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
-        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.433,"vote_count":24945}'
-  recorded_at: Thu, 13 Oct 2022 21:18:25 GMT
-- request:
-    method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json;charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Date:
-      - Thu, 13 Oct 2022 16:16:25 GMT
-      Server:
-      - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
-      Cache-Control:
-      - public, max-age=28800
-      X-Memc:
-      - HIT
-      X-Memc-Key:
-      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
-      X-Memc-Age:
-      - '16732'
-      X-Memc-Expires:
-      - '644'
-      Etag:
-      - W/"c31a446eb95502d3c0501a0b104f3d3b"
-      Vary:
-      - Accept-Encoding
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 73cb83fe6699afc2791b5c690c1ff8c6.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - SEA73-P1
-      Alt-Svc:
-      - h3=":443"; ma=86400
-      X-Amz-Cf-Id:
-      - rqDi7zuGvAUVyiOb8SNrqiFagzf64zM13b1xAJSnSV9CDv2yT39c8Q==
-      Age:
-      - '18121'
-    body:
-      encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
-        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
-        channel primal male aggression into a shocking new form of therapy. Their
-        concept catches on, with underground \"fight clubs\" forming in every town,
-        until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":98.443,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
-        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
-        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
-        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
-        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
-        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
-        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.433,"vote_count":24945}'
-  recorded_at: Thu, 13 Oct 2022 21:18:26 GMT
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.427,"vote_count":25035}'
+  recorded_at: Mon, 24 Oct 2022 02:08:58 GMT
 recorded_with: VCR 6.1.0

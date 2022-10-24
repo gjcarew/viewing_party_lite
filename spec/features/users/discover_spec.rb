@@ -17,13 +17,10 @@ RSpec.describe 'Discover movies page' do
 
     describe 'happy path' do
       xit 'When I search for a movie I am taken to the Movie Results Page', :vcr do
-        # json_response = File.read("spec/fixtures/movies_query_data.json")
-        # stub_request(:get, "https://api.themoviedb.org/3/search/movie?api_key=#{ENV['movies_api_key']}&query=fight").to_return(status: 200, body: json_response)
-
         user = create(:user)
         visit "/users/#{user.id}/discover"
-        # Details: There should only be a maximum of 40 results. The above details should be listed for each movie.
         fill_in('Search by Movie Title', with: 'fight')
+
         click_button('Search by Movie Title')
         expect(current_path).to eq("/users/#{user.id}/movies")
         expect(page).to have_content('Average Votes:')

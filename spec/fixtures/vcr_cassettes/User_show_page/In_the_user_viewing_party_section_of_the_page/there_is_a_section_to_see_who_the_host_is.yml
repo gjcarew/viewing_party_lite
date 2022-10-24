@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/200?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/200?api_key=
     body:
       encoding: US-ASCII
       string: ''
@@ -15,63 +15,40 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 401
+      message: Unauthorized
     headers:
       Content-Type:
-      - application/json;charset=utf-8
+      - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
       Date:
-      - Thu, 13 Oct 2022 20:21:03 GMT
+      - Mon, 24 Oct 2022 01:54:20 GMT
       Server:
       - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
       Cache-Control:
-      - public, max-age=28800
-      X-Memc:
-      - HIT
-      X-Memc-Key:
-      - 53f69bf4f650725c03ffdf165936beb4615be871
-      X-Memc-Age:
-      - '9580'
-      X-Memc-Expires:
-      - '5799'
-      Etag:
-      - W/"6a2f619bec3a92097d16c369267e08aa"
-      Vary:
-      - Accept-Encoding
+      - public, max-age=300
       X-Cache:
-      - Miss from cloudfront
+      - Error from cloudfront
       Via:
-      - 1.1 2324edbcb8fc72f617442c65f36a40fc.cloudfront.net (CloudFront)
+      - 1.1 ae06b19943a6bad1c1b12b79f7339498.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - ftzto-bRWM8JqRalW5XrdMGAdYqSPILDP_MJ6p7bemG-Gqxz5oGp2g==
+      - 1sEsS0vbVy489IX1reijlsbM6HhO062jsAdzylXDlw0X90qGm9Z6Hg==
+      Vary:
+      - Origin
     body:
-      encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/goNk0VDnUjxKjB6o69kYS5vvZo2.jpg","belongs_to_collection":{"id":115570,"name":"Star
-        Trek: The Next Generation Collection","poster_path":"/jYtNUfMbU6DBbmd4LUS19u4hF4p.jpg","backdrop_path":"/r7MMQenUURHhAVHFymtOb8AX4Bm.jpg"},"budget":70000000,"genres":[{"id":878,"name":"Science
-        Fiction"},{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":53,"name":"Thriller"}],"homepage":"","id":200,"imdb_id":"tt0120844","original_language":"en","original_title":"Star
-        Trek: Insurrection","overview":"When an alien race and factions within Starfleet
-        attempt to take over a planet that has \"regenerative\" properties, it falls
-        upon Captain Picard and the crew of the Enterprise to defend the planet''s
-        people as well as the very ideals upon which the Federation itself was founded.","popularity":17.708,"poster_path":"/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg","production_companies":[{"id":4,"logo_path":"/gz66EfNoYPqHTYI4q9UEN4CbHRc.png","name":"Paramount","origin_country":"US"},{"id":76068,"logo_path":null,"name":"Digital
-        Image Associates","origin_country":""}],"production_countries":[{"iso_3166_1":"US","name":"United
-        States of America"}],"release_date":"1998-12-11","revenue":118000000,"runtime":103,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"The
-        battle for paradise has begun.","title":"Star Trek: Insurrection","video":false,"vote_average":6.437,"vote_count":957}'
-  recorded_at: Thu, 13 Oct 2022 20:21:03 GMT
+      encoding: UTF-8
+      string: '{"status_code":7,"status_message":"Invalid API key: You must be granted
+        a valid key.","success":false}
+
+'
+  recorded_at: Mon, 24 Oct 2022 01:54:20 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/200?api_key=<movies_api_key>
@@ -97,16 +74,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 13 Oct 2022 20:21:03 GMT
+      - Mon, 24 Oct 2022 01:26:04 GMT
       Server:
       - openresty
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
-        Content-Length, Content-Range
       Cache-Control:
       - public, max-age=28800
       X-Memc:
@@ -114,23 +84,26 @@ http_interactions:
       X-Memc-Key:
       - 53f69bf4f650725c03ffdf165936beb4615be871
       X-Memc-Age:
-      - '9580'
+      - '15724'
       X-Memc-Expires:
-      - '5799'
+      - '1272'
       Etag:
-      - W/"6a2f619bec3a92097d16c369267e08aa"
+      - W/"15cc2fb7cc0be1b2bf019dd2b8208380"
       Vary:
-      - Accept-Encoding
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 001e7070d795018d01b93988b9723742.cloudfront.net (CloudFront)
+      - 1.1 cca7d60248a961ff8fc8c5640024b652.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - bdoMI-8LRFQ8GYaWYha4d8Yay5z65LH6R7w4XvloBUtJ_yRhGZFdig==
+      - ysNgdBtJ_9m0x0Ug_5PoL5MHempqZ7j6w6s7y4ZWaI-v-WPzq4AY8g==
+      Age:
+      - '2432'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/goNk0VDnUjxKjB6o69kYS5vvZo2.jpg","belongs_to_collection":{"id":115570,"name":"Star
@@ -139,9 +112,77 @@ http_interactions:
         Trek: Insurrection","overview":"When an alien race and factions within Starfleet
         attempt to take over a planet that has \"regenerative\" properties, it falls
         upon Captain Picard and the crew of the Enterprise to defend the planet''s
-        people as well as the very ideals upon which the Federation itself was founded.","popularity":17.708,"poster_path":"/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg","production_companies":[{"id":4,"logo_path":"/gz66EfNoYPqHTYI4q9UEN4CbHRc.png","name":"Paramount","origin_country":"US"},{"id":76068,"logo_path":null,"name":"Digital
+        people as well as the very ideals upon which the Federation itself was founded.","popularity":23.153,"poster_path":"/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg","production_companies":[{"id":4,"logo_path":"/gz66EfNoYPqHTYI4q9UEN4CbHRc.png","name":"Paramount","origin_country":"US"},{"id":76068,"logo_path":null,"name":"Digital
         Image Associates","origin_country":""}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1998-12-11","revenue":118000000,"runtime":103,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"The
-        battle for paradise has begun.","title":"Star Trek: Insurrection","video":false,"vote_average":6.437,"vote_count":957}'
-  recorded_at: Thu, 13 Oct 2022 20:21:03 GMT
+        battle for paradise has begun.","title":"Star Trek: Insurrection","video":false,"vote_average":6.436,"vote_count":961}'
+  recorded_at: Mon, 24 Oct 2022 02:06:36 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/200?api_key=<movies_api_key>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 24 Oct 2022 01:26:04 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 53f69bf4f650725c03ffdf165936beb4615be871
+      X-Memc-Age:
+      - '15724'
+      X-Memc-Expires:
+      - '1272'
+      Etag:
+      - W/"15cc2fb7cc0be1b2bf019dd2b8208380"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 cd64decb1403270c914848213601a674.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA73-P1
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - DMO5JmWaLUuhun5Ru8DTS8fFaT9vrWag64YmuMPWKaD5DH7S5LlFDg==
+      Age:
+      - '2586'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/goNk0VDnUjxKjB6o69kYS5vvZo2.jpg","belongs_to_collection":{"id":115570,"name":"Star
+        Trek: The Next Generation Collection","poster_path":"/jYtNUfMbU6DBbmd4LUS19u4hF4p.jpg","backdrop_path":"/r7MMQenUURHhAVHFymtOb8AX4Bm.jpg"},"budget":70000000,"genres":[{"id":878,"name":"Science
+        Fiction"},{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":53,"name":"Thriller"}],"homepage":"","id":200,"imdb_id":"tt0120844","original_language":"en","original_title":"Star
+        Trek: Insurrection","overview":"When an alien race and factions within Starfleet
+        attempt to take over a planet that has \"regenerative\" properties, it falls
+        upon Captain Picard and the crew of the Enterprise to defend the planet''s
+        people as well as the very ideals upon which the Federation itself was founded.","popularity":23.153,"poster_path":"/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg","production_companies":[{"id":4,"logo_path":"/gz66EfNoYPqHTYI4q9UEN4CbHRc.png","name":"Paramount","origin_country":"US"},{"id":76068,"logo_path":null,"name":"Digital
+        Image Associates","origin_country":""}],"production_countries":[{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1998-12-11","revenue":118000000,"runtime":103,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"The
+        battle for paradise has begun.","title":"Star Trek: Insurrection","video":false,"vote_average":6.436,"vote_count":961}'
+  recorded_at: Mon, 24 Oct 2022 02:09:10 GMT
 recorded_with: VCR 6.1.0

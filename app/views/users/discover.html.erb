@@ -9,7 +9,7 @@
     <div class="col-lg-6 mx-auto">
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
       <%= form_with url: "/users/#{@user.id}/movies", method: :get, local: :true, class: "form-control" do |f| %>
-        <%= f.text_field 'Search by Movie Title', { class: "form-control input-sm", id: "floatingInput", placeholder: "Movie Title" } %>
+        <%= f.text_field 'Search by Movie Title', { class: "form-control input-sm", placeholder: "Movie Title" } %>
       </div>
     </div>
     <div class="col-lg-6 mx-auto">

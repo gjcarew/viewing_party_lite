@@ -35,6 +35,19 @@ RSpec.describe 'application welcome page', type: :feature do
 
         click_on('New User')
         expect(current_path).to eq('/register')
+
+        username = "funbucket13@email.com"
+        password = "test"
+        name = 'funbucket'
+    
+        fill_in :email, with: username
+        fill_in :name, with: name
+        fill_in :password, with: password
+        fill_in :password_confirmation, with: password
+    
+        click_on "Create User"
+    
+        expect(page).to have_content("Welcome, #{name}")
       end
     end
   end
