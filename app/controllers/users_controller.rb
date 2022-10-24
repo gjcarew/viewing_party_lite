@@ -12,12 +12,12 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       redirect_to user_path(@user)
-      flash[:notice] = "Welcome #{@user.name}"
+      flash[:notice] = "Welcome, #{@user.name}"
     elsif params[:password] != params[:password_confirmation]
-      flash[:failure] = "Error: Password doesn't match."
+      flash[:error] = "Error: Password doesn't match."
       render :new
     else
-      flash[:failure] = @user.errors.full_messages.first
+      flash[:error] = @user.errors.full_messages.first
       render :new
     end
   end

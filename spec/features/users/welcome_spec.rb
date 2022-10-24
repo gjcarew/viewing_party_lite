@@ -46,7 +46,7 @@ RSpec.describe 'application welcome page', type: :feature do
         fill_in :password_confirmation, with: password
     
         click_on "Create User"
-    
+        
         expect(page).to have_content("Welcome, #{name}")
       end
     end
