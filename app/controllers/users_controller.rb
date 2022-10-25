@@ -1,31 +1,17 @@
 class UsersController < ApplicationController
-
+  before_action :logged_in_user, only: %i[show]
   def welcome
     @users = User.all
   end
 
-  def login_form
-  end
-
-  def login
-    if User.exists?(email: params[:email].downcase)
-      user = User.find_by(email: params[:email].downcase)
-      authenticate_pw(user)
-    else
-      flash[:error] = "Email not found."
-      render :login_form
-    end 
-  end
-
   def new
-    #  @user = User.new
+
   end
 
   def create
     @user = User.new(user_params)
     if @user.save
       log_in @user
-      session[:user_id] = @user.id
       redirect_to @user
       flash[:success] = "Welcome, #{@user.name}"
     elsif params[:password] != params[:password_confirmation]
@@ -38,20 +24,15 @@ class UsersController < ApplicationController
   end
 
   def show
-    if logged_in?
-      @user = User.find(params[:id])
-    else
-      redirect_to login_path
-      flash[:error] = 'You must be logged in to do that'
-    end
+    @user = current_user
   end
 
   def discover
-    @user = User.find(params[:id])
+    @user = current_user
   end
 
   def results
-    @user = User.find(params[:id])
+    @user = current_user
     if params["q"] == "top rated"
       @movies = MovieFacade.get_top20_movies
     elsif params["Search by Movie Title"] != ""

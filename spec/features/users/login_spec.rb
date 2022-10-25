@@ -10,9 +10,9 @@ RSpec.describe 'Logging in' do
     click_on "Log In"
 
     expect(current_path).to eq(login_path)
-
-    fill_in :email, with: user.email
-    fill_in :password, with: user.password
+    # require 'pry';binding.pry
+    fill_in 'session[email]', with: user.email
+    fill_in 'session[password]', with: user.password
 
     click_on "Log In"
 
@@ -26,8 +26,8 @@ RSpec.describe 'Logging in' do
 
     visit login_path
 
-    fill_in :email, with: user.email
-    fill_in :password, with: "incorrect password"
+    fill_in 'session[email]', with: user.email
+    fill_in 'session[password]', with: 'wrong password'
 
     click_on "Log In"
 
