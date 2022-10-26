@@ -16,7 +16,12 @@ RSpec.describe 'application welcome page', type: :feature do
       end
 
       it 'When I am logged in I only see a link to Log Out'  do
-        allow_any_instance_of(ApplicationController).to receive(:logged_in)
+        allow()
+        visit root_path
+        expect(page).to have_button('Log Out')
+        click_on 'Log Out'
+        expect(page).to have_button('New User')
+        expect(page).to have_button('Log In')
       end
 
       it 'The New User button should lead to the registration page' do

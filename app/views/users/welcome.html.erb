@@ -3,24 +3,13 @@
     <h1 class="display-5 fw-bold">Viewing Party Lite</h1>
     <div class="col-lg-6 mx-auto">
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <% if logged_in? %>
+        <%= button_to 'Log Out', logout_path, method: :delete, class: "btn btn-primary btn-lg px-4"%>
+        <% else %>
         <%= button_to "Log In",  login_path, method: :get, class: "btn btn-primary btn-lg px-4" %>
-        <%= button_to "New User",  register_path, method: :get, class: "btn btn-outline-secondary btn-lg px-4" %> 
+        <%= button_to "New User",  register_path, method: :get, class: "btn btn-outline-secondary btn-lg px-4" %>
+        <% end %> 
       </div>
-      
     </div>
-  <div class="col-lg-2 mx-auto" >
-    <div class="row mt-4">  
-      <h3 class="display-8 fw-bold">All Users</h3>
-    </div>
-    <div id="all_users" class="list-group w-auto">
-      <% @users.each do |user| %>
-      <a href="<%=user_path(user)%>" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-        <div class="d-flex gap-2 w-50 justify-content-between">
-            <h6 class="mb-0"><%= user.email %></h6>
-        </div>
-      </a>
-      <% end %>
-    </div>
-  </div>
   </div>
 </div>
