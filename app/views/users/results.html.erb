@@ -16,7 +16,7 @@
         <div class="card shadow-sm">
           <img src="<%= movie.poster_path %>" class="card-img-top" alt="<%= movie.title %>">
           <div class="card-body">
-            <h5 class="card-title"><%= link_to movie.title, "/users/#{@user.id}/movies/#{movie.id}" %></h5>
+            <h5 class="card-title"><%= link_to movie.title, "/dashboard/movies/#{movie.id}" %></h5>
             <p class="card-text">
               <h6 class="card-subtitle mb-2 text-muted">  Average Votes: <%= movie.average_votes %></h6>
             </p>

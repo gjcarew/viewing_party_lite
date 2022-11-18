@@ -15,19 +15,21 @@ RSpec.describe 'application welcome page', type: :feature do
         expect(current_path).to eq(root_path)
       end
 
-      it 'I can see a list of existing users' do
-        user1 = User.create!(name: Faker::Name.name , email: Faker::Internet.email, password_digest: BCrypt::Password.create('bananaBro'))
-        user2 = User.create!(name: Faker::Name.name , email: Faker::Internet.email, password_digest: BCrypt::Password.create('Ilovecode'))
-        user3 = User.create!(name: Faker::Name.name , email: Faker::Internet.email, password_digest: BCrypt::Password.create('IlovecOde2!'))
-        user4 = create(:user, password_digest:BCrypt::Password.create('IlovecOde2!'))
+      it 'When I am logged in I only see a link to Log Out'  do
+        visit register_path
+
+        fill_in(:name, with: "Peter Piper")
+        fill_in(:email, with: "Peter.Piper@peppers.com")
+        fill_in(:password, with: "IlovePeppers")
+        fill_in(:password_confirmation, with: "IlovePeppers")
+
+        click_on('Create User')
         
         visit root_path
-        within('#all_users') do
-          expect(page).to have_content("#{user1.email}")
-          expect(page).to have_content("#{user2.email}")
-          expect(page).to have_content("#{user3.email}")
-          expect(page).to have_content("#{user4.email}")
-        end
+        expect(page).to have_button('Log Out')
+        click_on 'Log Out'
+        expect(page).to have_button('New User')
+        expect(page).to have_button('Log In')
       end
 
       it 'The New User button should lead to the registration page' do
@@ -35,6 +37,19 @@ RSpec.describe 'application welcome page', type: :feature do
 
         click_on('New User')
         expect(current_path).to eq('/register')
+
+        username = "funbucket13@email.com"
+        password = "test"
+        name = 'funbucket'
+    
+        fill_in :email, with: username
+        fill_in :name, with: name
+        fill_in :password, with: password
+        fill_in :password_confirmation, with: password
+    
+        click_on "Create User"
+        
+        expect(page).to have_content("Welcome, #{name}")
       end
     end
   end

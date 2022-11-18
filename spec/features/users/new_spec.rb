@@ -6,7 +6,7 @@ RSpec.describe 'user registration page', type: :feature do
 
       it 'I can see a form to register including name, email, password & register button' do
 
-        visit new_user_path
+        visit register_path
         expect(page).to have_content('Name')
         expect(page).to have_content('Email')
         expect(page).to have_content('Password')
@@ -15,20 +15,20 @@ RSpec.describe 'user registration page', type: :feature do
 
       describe 'happy path' do
         it "Once the user registers they should be taken to a dashboard page '/users/:id', where :id is the id for the user that was just created." do
-          visit new_user_path 
+          visit register_path
+
           fill_in(:name, with: "Peter Piper")
           fill_in(:email, with: "Peter.Piper@peppers.com")
           fill_in(:password, with: "IlovePeppers")
           fill_in(:password_confirmation, with: "IlovePeppers")
 
           click_on('Create User')
-          user4 = create(:user, password_digest:BCrypt::Password.create('IlovecOde2!'))
 
-          expect(current_path).to eq("/users/#{(user4.id) - 1}")
+          expect(current_path).to eq("/dashboard.#{User.last.id}")
         end
 
         it "You can see a link to the home page" do
-          visit new_user_path
+          visit register_path
           expect(page).to have_link('Home')
 
           click_on('Home')
@@ -39,7 +39,7 @@ RSpec.describe 'user registration page', type: :feature do
 
       describe 'sad path' do
         it "If the user fails to fill in valid information they see an error message & are redirected to the current page to fill in the form again" do
-          visit new_user_path
+          visit register_path
 
           #missing name fill in
           fill_in(:email, with: "Peter.Piper@peppers.com")
@@ -47,12 +47,12 @@ RSpec.describe 'user registration page', type: :feature do
           fill_in(:password_confirmation, with: "IlovePeppers")
 
           click_on('Create User')
-          expect(current_path).to eq('/users')
+          expect(current_path).to eq(user_path)
           expect(page).to have_content("Name can't be blank")
         end
 
         it "If the user fails to password match they see an error message & are redirected to the current page to fill in the form again" do
-          visit new_user_path
+          visit register_path
 
           fill_in(:name, with: "Peter Piper")
           fill_in(:email, with: "Peter.Piper@peppers.com")
@@ -60,12 +60,12 @@ RSpec.describe 'user registration page', type: :feature do
           fill_in(:password_confirmation, with: "IlovePeppers!!!!!")
 
           click_on('Create User')
-          expect(current_path).to eq('/users')
+          expect(current_path).to eq(user_path)
           expect(page).to have_content("Error: Password doesn't match.")
         end
 
         it "If the user tried to use an email address that's already been taken they are not allowed to sign up." do
-          visit new_user_path
+          visit register_path
 
           fill_in(:name, with: "Peter Piper")
           fill_in(:email, with: "Peter.Piper@peppers.com")
@@ -74,6 +74,7 @@ RSpec.describe 'user registration page', type: :feature do
 
           click_on('Create User')
           click_on('Home')
+          click_on('Log Out')
           click_on('New User')
 
           fill_in(:name, with: "Megan Piper")
