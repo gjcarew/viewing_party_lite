@@ -16,7 +16,15 @@ RSpec.describe 'application welcome page', type: :feature do
       end
 
       it 'When I am logged in I only see a link to Log Out'  do
-        allow()
+        visit register_path
+
+        fill_in(:name, with: "Peter Piper")
+        fill_in(:email, with: "Peter.Piper@peppers.com")
+        fill_in(:password, with: "IlovePeppers")
+        fill_in(:password_confirmation, with: "IlovePeppers")
+
+        click_on('Create User')
+        
         visit root_path
         expect(page).to have_button('Log Out')
         click_on 'Log Out'

@@ -74,6 +74,7 @@ RSpec.describe 'user registration page', type: :feature do
 
           click_on('Create User')
           click_on('Home')
+          click_on('Log Out')
           click_on('New User')
 
           fill_in(:name, with: "Megan Piper")
