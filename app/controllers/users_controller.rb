@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i[show]
+  # before_action :logged_in_user, only: %i[show]
   def welcome
-    @user = current_user
+    session[:user_id] = 1
+    redirect_to user_path
+    # @user = current_user
   end
 
   def new
