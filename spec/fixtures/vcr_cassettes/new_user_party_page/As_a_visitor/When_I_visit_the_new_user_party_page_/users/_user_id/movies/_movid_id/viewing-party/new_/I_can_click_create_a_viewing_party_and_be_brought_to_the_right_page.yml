@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<MOVIES_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -74,7 +74,7 @@ http_interactions:
   recorded_at: Tue, 11 Apr 2023 22:32:45 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/550/credits?api_key=<movies_api_key>&language=en-US?
+    uri: https://api.themoviedb.org/3/movie/550/credits?api_key=<MOVIES_API_KEY>&language=en-US?
     body:
       encoding: US-ASCII
       string: ''
@@ -134,7 +134,7 @@ http_interactions:
   recorded_at: Tue, 11 Apr 2023 22:32:45 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/550/reviews?api_key=<movies_api_key>&language=en-US&page=1
+    uri: https://api.themoviedb.org/3/movie/550/reviews?api_key=<MOVIES_API_KEY>&language=en-US&page=1
     body:
       encoding: US-ASCII
       string: ''
@@ -192,7 +192,7 @@ http_interactions:
   recorded_at: Tue, 11 Apr 2023 22:32:45 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<MOVIES_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
