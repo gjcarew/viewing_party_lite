@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<MOVIES_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -74,7 +74,7 @@ http_interactions:
   recorded_at: Tue, 11 Apr 2023 22:32:58 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<MOVIES_API_KEY>
     body:
       encoding: US-ASCII
       string: ''

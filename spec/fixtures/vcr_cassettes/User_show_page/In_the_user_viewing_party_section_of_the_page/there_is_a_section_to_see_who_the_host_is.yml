@@ -51,7 +51,7 @@ http_interactions:
   recorded_at: Mon, 24 Oct 2022 01:54:20 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/200?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/200?api_key=<MOVIES_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -119,7 +119,7 @@ http_interactions:
   recorded_at: Tue, 11 Apr 2023 22:36:52 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/200?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/200?api_key=<MOVIES_API_KEY>
     body:
       encoding: US-ASCII
       string: ''

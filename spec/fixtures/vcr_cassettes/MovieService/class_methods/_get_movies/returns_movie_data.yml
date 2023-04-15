@@ -51,7 +51,7 @@ http_interactions:
   recorded_at: Mon, 24 Oct 2022 01:54:27 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/search/movie?api_key=<movies_api_key>&query=lion
+    uri: https://api.themoviedb.org/3/search/movie?api_key=<MOVIES_API_KEY>&query=lion
     body:
       encoding: US-ASCII
       string: ''
