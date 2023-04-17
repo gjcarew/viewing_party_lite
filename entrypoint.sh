@@ -18,13 +18,6 @@ if [ "$WARMUP_DEPLOY" == "true" ]; then
   echo "Warmup deploy: migrations done"
 fi
 
-if [ "$FIRST_DEPLOY" == "true" ]; then
-  # This only needs to run on the database once.
-  echo "First deploy: seeding DB..."
-  bundle exec rake db:migrate
-  echo "first deploy: seeding done"
-fi
-
 # Precompile assets (can be skipped for an API)
 
 RAILS_ENV=production bundle exec rails assets:precompile

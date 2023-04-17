@@ -1,0 +1,27 @@
+timeout: 1200s
+steps:
+  # Build the application
+  - name: gcr.io/cloud-builders/gcloud
+    args: ['builds', 'submit', '--tag', 'gcr.io/vp-demo-383902/cloudrun/cloud-run-vp-demo']
+  
+  # Deploy the warmup version
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      - run
+      - deploy
+      - cloud-run-vp-demo
+      - '--image=gcr.io/vp-demo-383902/cloudrun/cloud-run-vp-demo'
+      - '--platform=managed'
+      - '--region=us-west1'
+      - '--update-env-vars=WARMUP_DEPLOY=true'
+
+  # Deploy the mainstream version
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      - run
+      - deploy 
+      - cloud-run-vp-demo
+      - '--image=gcr.io/vp-demo-383902/cloudrun/cloud-run-vp-demo'
+      - '--platform=managed'
+      - '--region=us-west1'
+      - '--update-env-vars=WARMUP_DEPLOY=false'

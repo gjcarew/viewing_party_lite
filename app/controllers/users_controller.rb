@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   # before_action :logged_in_user, only: %i[show]
   def welcome
-    session[:user_id] = 1
+    session[:user_id] = 2
     redirect_to user_path
     # @user = current_user
   end
