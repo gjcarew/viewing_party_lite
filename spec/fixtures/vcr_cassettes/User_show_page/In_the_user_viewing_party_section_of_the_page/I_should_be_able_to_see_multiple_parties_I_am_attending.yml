@@ -198,7 +198,7 @@ http_interactions:
   recorded_at: Mon, 24 Oct 2022 01:54:24 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/200?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/200?api_key=<MOVIES_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -221,52 +221,192 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 18 Nov 2022 22:52:42 GMT
+      - Tue, 11 Apr 2023 22:33:11 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=28800
+      - public, max-age=25439
       X-Memc:
       - HIT
       X-Memc-Key:
-      - 53f69bf4f650725c03ffdf165936beb4615be871
+      - be8a1df51d9426ecad2b1985fe76ffb6
       X-Memc-Age:
-      - '10048'
+      - '20971'
       X-Memc-Expires:
-      - '7295'
+      - '2670'
       Etag:
-      - W/"42af71439341dc45b833f38219360e7e"
+      - W/"86303bfe6d21ca43f6702a02aba5787e"
       Vary:
-      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 5fe5f2a3903f1378941d92eceaf3fa16.cloudfront.net (CloudFront)
+      - 1.1 9825a45e2b387a61504c0c3df20048ee.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - WBZRksT53zQoOiKwBDhiTD4t-1i-cCxHBG6Fpqa3yHlkUuta-2Sypg==
+      - _Ck6chYGI3ZgF1s4lt2DJfpapRx4wv_OW8NvIC2FdS0f4xMpFUMrQg==
+      Age:
+      - '382'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/vsjuHP9RQZJgYUvvSlO3mjJpXkq.jpg","belongs_to_collection":{"id":115570,"name":"Star
+        Trek: The Next Generation Collection","poster_path":"/jYtNUfMbU6DBbmd4LUS19u4hF4p.jpg","backdrop_path":"/r7MMQenUURHhAVHFymtOb8AX4Bm.jpg"},"budget":70000000,"genres":[{"id":878,"name":"Science
+        Fiction"},{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":53,"name":"Thriller"}],"homepage":"","id":200,"imdb_id":"tt0120844","original_language":"en","original_title":"Star
+        Trek: Insurrection","overview":"When an alien race and factions within Starfleet
+        attempt to take over a planet that has \"regenerative\" properties, it falls
+        upon Captain Picard and the crew of the Enterprise to defend the planet''s
+        people as well as the very ideals upon which the Federation itself was founded.","popularity":25.469,"poster_path":"/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg","production_companies":[{"id":4,"logo_path":"/gz66EfNoYPqHTYI4q9UEN4CbHRc.png","name":"Paramount","origin_country":"US"},{"id":76068,"logo_path":null,"name":"Digital
+        Image Associates","origin_country":""}],"production_countries":[{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1998-12-11","revenue":118000000,"runtime":103,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"The
+        battle for paradise has begun.","title":"Star Trek: Insurrection","video":false,"vote_average":6.4,"vote_count":1025}'
+  recorded_at: Tue, 11 Apr 2023 22:39:33 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<MOVIES_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 11 Apr 2023 22:32:44 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=27075
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 86a19bcac53cd02291bef63cf5445bc3
+      X-Memc-Age:
+      - '1287'
+      X-Memc-Expires:
+      - '26761'
+      Etag:
+      - W/"44986de77c083aec72248e130b288c16"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 219e8f088c8c2a564bdacafe44be620a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C3
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - 20EIqGBZuDgHLZsVcd1UqBiPnPdy36CQ7GufmPdVgBFYzmZWarSzUQ==
+      Age:
+      - '409'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
+        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
+        channel primal male aggression into a shocking new form of therapy. Their
+        concept catches on, with underground \"fight clubs\" forming in every town,
+        until an eccentric gets in the way and ignites an out-of-control spiral toward
+        oblivion.","popularity":87.162,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
+        2000 Pictures","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
+        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
+        Films","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
+        Linson Company","origin_country":"US"},{"id":25,"logo_path":"/qZCc1lty5FzX30aOCVRBLzaVmcp.png","name":"20th
+        Century Fox","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.431,"vote_count":26176}'
+  recorded_at: Tue, 11 Apr 2023 22:39:33 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/200?api_key=<MOVIES_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 16 Apr 2023 03:25:05 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=23910
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - be8a1df51d9426ecad2b1985fe76ffb6
+      X-Memc-Age:
+      - '5672'
+      X-Memc-Expires:
+      - '22659'
+      Etag:
+      - W/"c8c81ca113d26da100f07c6fae07b201"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 74ab105148338444981d1b2277ffd9c4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C3
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - 3Tsc5KWAwpMirsT2cE_vTyqWbzzJ3GRfeQ2yOI_DyPcX5nu7kOO8CQ==
       Age:
       - '4'
     body:
       encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/goNk0VDnUjxKjB6o69kYS5vvZo2.jpg","belongs_to_collection":{"id":115570,"name":"Star
+      string: '{"adult":false,"backdrop_path":"/vsjuHP9RQZJgYUvvSlO3mjJpXkq.jpg","belongs_to_collection":{"id":115570,"name":"Star
         Trek: The Next Generation Collection","poster_path":"/jYtNUfMbU6DBbmd4LUS19u4hF4p.jpg","backdrop_path":"/r7MMQenUURHhAVHFymtOb8AX4Bm.jpg"},"budget":70000000,"genres":[{"id":878,"name":"Science
         Fiction"},{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":53,"name":"Thriller"}],"homepage":"","id":200,"imdb_id":"tt0120844","original_language":"en","original_title":"Star
         Trek: Insurrection","overview":"When an alien race and factions within Starfleet
         attempt to take over a planet that has \"regenerative\" properties, it falls
         upon Captain Picard and the crew of the Enterprise to defend the planet''s
-        people as well as the very ideals upon which the Federation itself was founded.","popularity":15.593,"poster_path":"/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg","production_companies":[{"id":4,"logo_path":"/gz66EfNoYPqHTYI4q9UEN4CbHRc.png","name":"Paramount","origin_country":"US"},{"id":76068,"logo_path":null,"name":"Digital
+        people as well as the very ideals upon which the Federation itself was founded.","popularity":20.623,"poster_path":"/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg","production_companies":[{"id":4,"logo_path":"/gz66EfNoYPqHTYI4q9UEN4CbHRc.png","name":"Paramount","origin_country":"US"},{"id":76068,"logo_path":null,"name":"Digital
         Image Associates","origin_country":""}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1998-12-11","revenue":118000000,"runtime":103,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"The
-        battle for paradise has begun.","title":"Star Trek: Insurrection","video":false,"vote_average":6.4,"vote_count":967}'
-  recorded_at: Fri, 18 Nov 2022 22:52:46 GMT
+        battle for paradise has begun.","title":"Star Trek: Insurrection","video":false,"vote_average":6.423,"vote_count":1026}'
+  recorded_at: Sun, 16 Apr 2023 03:25:09 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<MOVIES_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -289,55 +429,56 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 18 Nov 2022 22:52:18 GMT
+      - Sun, 16 Apr 2023 03:24:40 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=28800
+      - public, max-age=28166
       X-Memc:
       - HIT
       X-Memc-Key:
-      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
+      - 86a19bcac53cd02291bef63cf5445bc3
       X-Memc-Age:
-      - '9437'
+      - '5680'
       X-Memc-Expires:
-      - '6253'
+      - '17068'
       Etag:
-      - W/"8144fd4cfda2959014dbad1da3f6dc72"
+      - W/"a1fab831ec60ef07f749b09b108bbffb"
       Vary:
-      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 ead78c395f4bede3ec6cd7ea180e3d3a.cloudfront.net (CloudFront)
+      - 1.1 8cb7de37a1655236518810d0aabb8656.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - Mqr14qLjKW8YJwgnnHnIORu2X1dzhu0Pmi2SIHdLKG6QBbO11UCNVA==
+      - Q0lm3JRy7-XYAM5Faqz70nAEIxI8fr3NQRlJgGNmrm7ID4fUZJJv9g==
       Age:
-      - '28'
+      - '29'
     body:
       encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/c6OLXfKAk5BKeR6broC8pYiCquX.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
+      string: '{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
         Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
         channel primal male aggression into a shocking new form of therapy. Their
         concept catches on, with underground \"fight clubs\" forming in every town,
         until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":155.726,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        oblivion.","popularity":71.909,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
         Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
-        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
-        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
+        2000 Pictures","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
         Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
-        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        Films","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
+        Linson Company","origin_country":"US"},{"id":25,"logo_path":"/qZCc1lty5FzX30aOCVRBLzaVmcp.png","name":"20th
+        Century Fox","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.428,"vote_count":25188}'
-  recorded_at: Fri, 18 Nov 2022 22:52:46 GMT
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.432,"vote_count":26209}'
+  recorded_at: Sun, 16 Apr 2023 03:25:09 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/200?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/200?api_key=<MOVIES_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -360,52 +501,52 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 18 Nov 2022 22:52:42 GMT
+      - Sun, 16 Apr 2023 03:25:05 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=28800
+      - public, max-age=23910
       X-Memc:
       - HIT
       X-Memc-Key:
-      - 53f69bf4f650725c03ffdf165936beb4615be871
+      - be8a1df51d9426ecad2b1985fe76ffb6
       X-Memc-Age:
-      - '10048'
+      - '5672'
       X-Memc-Expires:
-      - '7295'
+      - '22659'
       Etag:
-      - W/"42af71439341dc45b833f38219360e7e"
+      - W/"c8c81ca113d26da100f07c6fae07b201"
       Vary:
-      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 28390a4d24ed4fdccd685d99cd06cf4e.cloudfront.net (CloudFront)
+      - 1.1 31dfa94142c6eaf975b0e5454c00340a.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - fZBi06l0hpXgVRjqcAOs68VwrmP9Y3UQBmWa2Wf0sDYHPOzton9TVQ==
+      - FA-InfdYmBPayDQYq3LO7f6YqUxjWdo6HrQqjVP89uSQrBRcJYXxcw==
       Age:
-      - '567'
+      - '4'
     body:
       encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/goNk0VDnUjxKjB6o69kYS5vvZo2.jpg","belongs_to_collection":{"id":115570,"name":"Star
+      string: '{"adult":false,"backdrop_path":"/vsjuHP9RQZJgYUvvSlO3mjJpXkq.jpg","belongs_to_collection":{"id":115570,"name":"Star
         Trek: The Next Generation Collection","poster_path":"/jYtNUfMbU6DBbmd4LUS19u4hF4p.jpg","backdrop_path":"/r7MMQenUURHhAVHFymtOb8AX4Bm.jpg"},"budget":70000000,"genres":[{"id":878,"name":"Science
         Fiction"},{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":53,"name":"Thriller"}],"homepage":"","id":200,"imdb_id":"tt0120844","original_language":"en","original_title":"Star
         Trek: Insurrection","overview":"When an alien race and factions within Starfleet
         attempt to take over a planet that has \"regenerative\" properties, it falls
         upon Captain Picard and the crew of the Enterprise to defend the planet''s
-        people as well as the very ideals upon which the Federation itself was founded.","popularity":15.593,"poster_path":"/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg","production_companies":[{"id":4,"logo_path":"/gz66EfNoYPqHTYI4q9UEN4CbHRc.png","name":"Paramount","origin_country":"US"},{"id":76068,"logo_path":null,"name":"Digital
+        people as well as the very ideals upon which the Federation itself was founded.","popularity":20.623,"poster_path":"/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg","production_companies":[{"id":4,"logo_path":"/gz66EfNoYPqHTYI4q9UEN4CbHRc.png","name":"Paramount","origin_country":"US"},{"id":76068,"logo_path":null,"name":"Digital
         Image Associates","origin_country":""}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1998-12-11","revenue":118000000,"runtime":103,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"The
-        battle for paradise has begun.","title":"Star Trek: Insurrection","video":false,"vote_average":6.4,"vote_count":967}'
-  recorded_at: Fri, 18 Nov 2022 23:02:09 GMT
+        battle for paradise has begun.","title":"Star Trek: Insurrection","video":false,"vote_average":6.423,"vote_count":1026}'
+  recorded_at: Sun, 16 Apr 2023 03:25:09 GMT
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
+    uri: https://api.themoviedb.org/3/movie/550?api_key=<MOVIES_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -428,189 +569,51 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Fri, 18 Nov 2022 22:52:18 GMT
+      - Sun, 16 Apr 2023 03:24:40 GMT
       Server:
       - openresty
       Cache-Control:
-      - public, max-age=28800
+      - public, max-age=28166
       X-Memc:
       - HIT
       X-Memc-Key:
-      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
+      - 86a19bcac53cd02291bef63cf5445bc3
       X-Memc-Age:
-      - '9437'
+      - '5680'
       X-Memc-Expires:
-      - '6253'
+      - '17068'
       Etag:
-      - W/"8144fd4cfda2959014dbad1da3f6dc72"
+      - W/"a1fab831ec60ef07f749b09b108bbffb"
       Vary:
-      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 6396e88c437c096ef98930ce29f731a2.cloudfront.net (CloudFront)
+      - 1.1 50faaaa196a6b0875217ef7827f97d7c.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - Wat_MdYfSWrVeK-L7huMwi3uHyCDAFduHK1o0vpzWHnqhjaWrVrOzA==
+      - 0AXwy-J-D_5yn0RUxKAUA7Sag8qcbZAZSWsiil-Mta29f4Fd8fNsdQ==
       Age:
-      - '592'
+      - '29'
     body:
       encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/c6OLXfKAk5BKeR6broC8pYiCquX.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
+      string: '{"adult":false,"backdrop_path":"/hZkgoQYus5vegHoetLkCJzb17zJ.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
         Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
         channel primal male aggression into a shocking new form of therapy. Their
         concept catches on, with underground \"fight clubs\" forming in every town,
         until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":155.726,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
+        oblivion.","popularity":71.909,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
         Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
-        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
-        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
+        2000 Pictures","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
         Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
-        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
+        Films","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
+        Linson Company","origin_country":"US"},{"id":25,"logo_path":"/qZCc1lty5FzX30aOCVRBLzaVmcp.png","name":"20th
+        Century Fox","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.428,"vote_count":25188}'
-  recorded_at: Fri, 18 Nov 2022 23:02:10 GMT
-- request:
-    method: get
-    uri: https://api.themoviedb.org/3/movie/200?api_key=<movies_api_key>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json;charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Date:
-      - Fri, 18 Nov 2022 22:52:42 GMT
-      Server:
-      - openresty
-      Cache-Control:
-      - public, max-age=28800
-      X-Memc:
-      - HIT
-      X-Memc-Key:
-      - 53f69bf4f650725c03ffdf165936beb4615be871
-      X-Memc-Age:
-      - '10048'
-      X-Memc-Expires:
-      - '7295'
-      Etag:
-      - W/"42af71439341dc45b833f38219360e7e"
-      Vary:
-      - Accept-Encoding,Accept-Encoding,Accept-Encoding
-      - Origin
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 2ab6211e66998c8b58132661a7e3cade.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - SEA73-P1
-      Alt-Svc:
-      - h3=":443"; ma=86400
-      X-Amz-Cf-Id:
-      - Xn41nnbobuNBEIKt9XGYUpqrKhykVYrzT-FqL01441X91ikCKrUDkw==
-      Age:
-      - '568'
-    body:
-      encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/goNk0VDnUjxKjB6o69kYS5vvZo2.jpg","belongs_to_collection":{"id":115570,"name":"Star
-        Trek: The Next Generation Collection","poster_path":"/jYtNUfMbU6DBbmd4LUS19u4hF4p.jpg","backdrop_path":"/r7MMQenUURHhAVHFymtOb8AX4Bm.jpg"},"budget":70000000,"genres":[{"id":878,"name":"Science
-        Fiction"},{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":53,"name":"Thriller"}],"homepage":"","id":200,"imdb_id":"tt0120844","original_language":"en","original_title":"Star
-        Trek: Insurrection","overview":"When an alien race and factions within Starfleet
-        attempt to take over a planet that has \"regenerative\" properties, it falls
-        upon Captain Picard and the crew of the Enterprise to defend the planet''s
-        people as well as the very ideals upon which the Federation itself was founded.","popularity":15.593,"poster_path":"/xQCMAHeg5M9HpDIqanYbWdr4brB.jpg","production_companies":[{"id":4,"logo_path":"/gz66EfNoYPqHTYI4q9UEN4CbHRc.png","name":"Paramount","origin_country":"US"},{"id":76068,"logo_path":null,"name":"Digital
-        Image Associates","origin_country":""}],"production_countries":[{"iso_3166_1":"US","name":"United
-        States of America"}],"release_date":"1998-12-11","revenue":118000000,"runtime":103,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"The
-        battle for paradise has begun.","title":"Star Trek: Insurrection","video":false,"vote_average":6.4,"vote_count":967}'
-  recorded_at: Fri, 18 Nov 2022 23:02:10 GMT
-- request:
-    method: get
-    uri: https://api.themoviedb.org/3/movie/550?api_key=<movies_api_key>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json;charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Date:
-      - Fri, 18 Nov 2022 22:52:18 GMT
-      Server:
-      - openresty
-      Cache-Control:
-      - public, max-age=28800
-      X-Memc:
-      - HIT
-      X-Memc-Key:
-      - 8f3dc9fbf00ec8ef64b14b7080f4013a23d639da
-      X-Memc-Age:
-      - '9437'
-      X-Memc-Expires:
-      - '6253'
-      Etag:
-      - W/"8144fd4cfda2959014dbad1da3f6dc72"
-      Vary:
-      - Accept-Encoding,Accept-Encoding,Accept-Encoding
-      - Origin
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 09331f0822fc98eebaf04130a83dbd44.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - SEA73-P1
-      Alt-Svc:
-      - h3=":443"; ma=86400
-      X-Amz-Cf-Id:
-      - uAR62n3653CpxyM8Ofb1XEzPQRoYsDGCdlaXNfHmYsF7wYcUWko8Jw==
-      Age:
-      - '592'
-    body:
-      encoding: ASCII-8BIT
-      string: '{"adult":false,"backdrop_path":"/c6OLXfKAk5BKeR6broC8pYiCquX.jpg","belongs_to_collection":null,"budget":63000000,"genres":[{"id":18,"name":"Drama"},{"id":53,"name":"Thriller"},{"id":35,"name":"Comedy"}],"homepage":"http://www.foxmovies.com/movies/fight-club","id":550,"imdb_id":"tt0137523","original_language":"en","original_title":"Fight
-        Club","overview":"A ticking-time-bomb insomniac and a slippery soap salesman
-        channel primal male aggression into a shocking new form of therapy. Their
-        concept catches on, with underground \"fight clubs\" forming in every town,
-        until an eccentric gets in the way and ignites an out-of-control spiral toward
-        oblivion.","popularity":155.726,"poster_path":"/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg","production_companies":[{"id":508,"logo_path":"/7cxRWzi4LsVm4Utfpr1hfARNurT.png","name":"Regency
-        Enterprises","origin_country":"US"},{"id":711,"logo_path":"/tEiIH5QesdheJmDAqQwvtN60727.png","name":"Fox
-        2000 Pictures","origin_country":"US"},{"id":4700,"logo_path":"/A32wmjrs9Psf4zw0uaixF0GXfxq.png","name":"The
-        Linson Company","origin_country":"US"},{"id":20555,"logo_path":"/hD8yEGUBlHOcfHYbujp71vD8gZp.png","name":"Taurus
-        Film","origin_country":"DE"},{"id":54051,"logo_path":null,"name":"Atman Entertainment","origin_country":""},{"id":54052,"logo_path":null,"name":"Knickerbocker
-        Films","origin_country":"US"}],"production_countries":[{"iso_3166_1":"DE","name":"Germany"},{"iso_3166_1":"US","name":"United
-        States of America"}],"release_date":"1999-10-15","revenue":100853753,"runtime":139,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Mischief.
-        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.428,"vote_count":25188}'
-  recorded_at: Fri, 18 Nov 2022 23:02:10 GMT
+        Mayhem. Soap.","title":"Fight Club","video":false,"vote_average":8.432,"vote_count":26209}'
+  recorded_at: Sun, 16 Apr 2023 03:25:09 GMT
 recorded_with: VCR 6.1.0

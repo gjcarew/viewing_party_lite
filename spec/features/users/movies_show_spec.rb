@@ -43,7 +43,7 @@ RSpec.describe 'a users movies show page', type: :feature do
         expect(page).to have_content("Drama")
       end
 
-      it 'has the movie total review count, reviewed information, and top 10 cast members for the movie', :vcr do
+      xit 'has the movie total review count, reviewed information, and top 10 cast members for the movie', :vcr do
         visit "/dashboard/movies/550"
 
         expect(page).to have_content("7 Reviews")

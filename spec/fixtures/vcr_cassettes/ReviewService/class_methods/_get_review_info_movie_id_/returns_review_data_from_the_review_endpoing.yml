@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.themoviedb.org/3/movie/550/reviews?api_key=<movies_api_key>&language=en-US&page=1
+    uri: https://api.themoviedb.org/3/movie/550/reviews?api_key=<MOVIES_API_KEY>&language=en-US&page=1
     body:
       encoding: US-ASCII
       string: ''
